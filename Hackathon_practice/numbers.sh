@@ -51,5 +51,5 @@ printf '%.2f\n' "$avg"
 echo "Different between first and last number is :"
 first=${array[0]}
 last=${array[3]}
-diff="$(($last+$first)) | bc"
-echo "$diff"
+diff="$( bc <<<"$first - $last" )"
+printf '%.2f\n' "$diff"
