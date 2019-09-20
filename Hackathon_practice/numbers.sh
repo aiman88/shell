@@ -15,8 +15,8 @@ do
 	array[x]=$i
 #	echo ${array[x]} 
 	x="$(($x+1))"
-	sum="$( bc <<<"$sum + $i" )"
-#	sum="$(($sum + $i))"
+#	sum="$( bc <<<"$sum + $i" )"
+	sum="$(($sum + $i))"
 done
 echo ++++++++++++++++++++++++++++++++++++++++++++++
 
