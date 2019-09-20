@@ -10,6 +10,7 @@ read numbers
 #Assigning number into array
 x=0
 sum=0
+declare -a array
 for i in $numbers
 do
 	array[x]=$i
