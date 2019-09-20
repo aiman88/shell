@@ -40,13 +40,12 @@ echo "${array[*]}" | sort -n | head -n1
 
 #Print Sum of the number
 echo "Sum of number is :"
-printf 'sum = %.2f\n' "$sum"
+printf '%.2f\n' "$sum"
 
 #Print average of the number
 echo "Average is :"
 avg="$( bc <<<"$sum / $x" )"
-#avg="$(($sum / $i))"
-printf 'avg = %.2f\n' "$avg"
+printf '%.2f\n' "$avg"
 echo $avg
 
 
