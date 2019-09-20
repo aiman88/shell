@@ -15,6 +15,7 @@ for i in $numbers
 do
 #	array[x]=$i
 #	echo ${array[x]} 
+	${array[x]}=$i   
 	x="$(($x+1))"
 #	sum="$( bc <<<"$sum + $i" )"
 #	sum="$(($sum + $i))"
