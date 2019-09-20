@@ -14,10 +14,8 @@ sum=0
 for i in $numbers
 do
 	array[$x]=$i
-#	echo ${array[x]} 
-#	${array[x]}=$i   
 	x="$(($x+1))"
-#	sum="$( bc <<<"$sum + $i" )"
+	sum="$( bc <<<"$sum + $i" )"
 #	sum="$(($sum + $i))"
 done
 echo ++++++++++++++++++++++++++++++++++++++++++++++
@@ -26,7 +24,8 @@ echo ++++++++++++++++++++++++++++++++++++++++++++++
 echo "how many number given"
 echo "$x" 
 
-echo "Printing array value"
+#Print all value given *array
+echo "Printing all value given"
 echo ${array[@]} 
 
 #Print the highest number
