@@ -10,7 +10,7 @@ read numbers
 #Assigning number into array
 x=0
 sum=0
-#declare -a array
+
 for i in $numbers
 do
 	array[$x]=$i
@@ -49,5 +49,7 @@ printf '%.2f\n' "$avg"
 
 #Different between first and last
 echo "Different between first and last number is :"
-diff="$((${array[x]}-${array[0]}))"
-printf '%.2f\n' "$diff"
+first=array[0]
+last=array[$x]
+echo "first value $first"
+echo "last value $last"
