@@ -10,10 +10,10 @@ read numbers
 #Assigning number into array
 x=0
 sum=0
-declare -a array
+#declare -a array
 for i in $numbers
 do
-	array[x]=$i
+#	array[x]=$i
 #	echo ${array[x]} 
 	x="$(($x+1))"
 #	sum="$( bc <<<"$sum + $i" )"
@@ -21,6 +21,9 @@ do
 done
 echo ++++++++++++++++++++++++++++++++++++++++++++++
 
+#Print the how many number given
+echo "how many number given"
+echo "$x" 
 
 #Print the highest number
 IFS=$'\n'
