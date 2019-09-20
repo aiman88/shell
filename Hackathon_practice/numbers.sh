@@ -49,7 +49,8 @@ printf '%.2f\n' "$avg"
 
 #Different between first and last
 echo "Different between first and last number is :"
+y="$(($x-1))"
 first=${array[0]}
-last=${array[3]}
+last=${array[$y]}
 diff="$( bc <<<"$first - $last" )"
 printf '%.2f\n' "$diff"
