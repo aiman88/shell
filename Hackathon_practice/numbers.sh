@@ -39,8 +39,8 @@ echo ${array[@]}
 #echo "${array[*]}" | sort -n | head -n1
 
 #Print Sum of the number
-#echo "Average number is :"
-#printf 'sum = %.2f\n' "$sum"
+echo "Sum of number is :"
+printf 'sum = %.2f\n' "$sum"
 
 
 #Different between first and last
