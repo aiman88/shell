@@ -13,7 +13,7 @@ sum=0
 declare -a array
 for i in $numbers
 do
-	array[$x]=$i
+	array[$x]="hehe"
 #	echo ${array[x]} 
 #	${array[x]}=$i   
 	x="$(($x+1))"
