@@ -50,4 +50,4 @@ printf '%.2f\n' "$avg"
 #Different between first and last
 echo "Different between first and last number is :"
 diff="$((${array[x]}-${array[0]}))"
-echo $diff
+printf '%.2f\n' "$diff"
