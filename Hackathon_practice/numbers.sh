@@ -21,26 +21,31 @@ done
 echo ++++++++++++++++++++++++++++++++++++++++++++++
 
 #Print the how many number given
-echo "how many number given"
+echo "How many number given :"
 echo "$x" 
 
 #Print all value given *array
-echo "Printing all value given"
+echo "Printing all value given :"
 echo ${array[@]} 
 
 #Print the highest number
-#IFS=$'\n'
-#echo "highest number is :"
-#echo "${array[*]}" | sort -nr | head -n1
+IFS=$'\n'
+echo "highest number is :"
+echo "${array[*]}" | sort -nr | head -n1
 
 #Print the lowest number
-#IFS=$'\n'
-#echo "lowest number is :"
-#echo "${array[*]}" | sort -n | head -n1
+IFS=$'\n'
+echo "lowest number is :"
+echo "${array[*]}" | sort -n | head -n1
 
 #Print Sum of the number
 echo "Sum of number is :"
 printf 'sum = %.2f\n' "$sum"
+
+#Print average of the number
+echo "Average is :"
+avg="$(($sum / $i))"
+printf 'sum = %.2f\n' "$avg"
 
 
 #Different between first and last
