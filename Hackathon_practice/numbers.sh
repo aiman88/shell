@@ -44,7 +44,7 @@ printf 'sum = %.2f\n' "$sum"
 
 #Print average of the number
 echo "Average is :"
-avg="$( bc <<<"$sum / $i" )"
+avg="$( bc <<<"$sum / $x" )"
 #avg="$(($sum / $i))"
 printf 'avg = %.2f\n' "$avg"
 
