@@ -13,9 +13,9 @@ sum=0
 #declare -a array
 for i in $numbers
 do
-#	array[x]=$i
+	array[x]=$i
 #	echo ${array[x]} 
-	${array[x]}=$i   
+#	${array[x]}=$i   
 	x="$(($x+1))"
 #	sum="$( bc <<<"$sum + $i" )"
 #	sum="$(($sum + $i))"
@@ -27,18 +27,18 @@ echo "how many number given"
 echo "$x" 
 
 #Print the highest number
-IFS=$'\n'
-echo "highest number is :"
-echo "${array[*]}" | sort -nr | head -n1
+#IFS=$'\n'
+#echo "highest number is :"
+#echo "${array[*]}" | sort -nr | head -n1
 
 #Print the lowest number
-IFS=$'\n'
-echo "lowest number is :"
-echo "${array[*]}" | sort -n | head -n1
+#IFS=$'\n'
+#echo "lowest number is :"
+#echo "${array[*]}" | sort -n | head -n1
 
 #Print Sum of the number
-echo "Average number is :"
-printf 'sum = %.2f\n' "$sum"
+#echo "Average number is :"
+#printf 'sum = %.2f\n' "$sum"
 
 
 #Different between first and last
