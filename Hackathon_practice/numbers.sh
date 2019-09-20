@@ -46,9 +46,8 @@ printf '%.2f\n' "$sum"
 echo "Average is :"
 avg="$( bc <<<"$sum / $x" )"
 printf '%.2f\n' "$avg"
-echo $avg
 
 #Different between first and last
 echo "Different between first and last number is :"
 diff="$((${array[x]}-${array[0]}))"
-#echo $diff
+echo $diff
