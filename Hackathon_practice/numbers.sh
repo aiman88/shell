@@ -47,6 +47,7 @@ echo "Average is :"
 avg="$( bc <<<"$sum / $x" )"
 #avg="$(($sum / $i))"
 printf 'avg = %.2f\n' "$avg"
+echo $avg
 
 
 #Different between first and last
